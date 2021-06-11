@@ -8,8 +8,30 @@
 </head>
 
 <body>
-    <h1>Contact Page</h1>
-    <img src="img/tom.jpg" alt="Tom's picture">
+    <div class="contact-wrapper">
+        <h1>Envoyez-moi un message !</h1>
+        <div class="form-wrapper">
+            <form action="#" method="get">
+                <label for="fname">Prénom</label><br>
+                <input type="text" id="fname" name="fname" value="John"><br>
+                <label for="lname">Nom</label><br>
+                <input type="text" id="lname" name="lname" value="Doe"><br>
+                <label for="lname">Message</label><br>
+                <textarea name="comment" form="usrform">Votre message ici</textarea><br><br>
+                <input id="yes" type="submit" value="Submit">
+            </form>
+        </div>
+
+    </div>
+
+
+    <script>
+        var button = document.getElementById("yes");
+        if (button.clicked == true) {
+            promt("name");
+        }
+    </script>
+
 </body>
 
 </html>
